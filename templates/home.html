@@ -6,7 +6,8 @@
 </head>
 <body>
 {% for gallery in gallerys.all %}
-{{ gallery.description }}
+    {{ gallery.description }}
+    <img src="{{ gallery.image.url }}">
 {% endfor %}
 
 </body>
